@@ -1,0 +1,114 @@
+https://tailwindcss.com/
+vs code mn 2 folders bnany h jesy k dist and src then dist mn index.html or src mn ye input.css bnani h ,open tailwind css, goto docs, then tailwind cli, then terminal py jo 2nd line h wo copy krna ye: npm install -D tailwindcss : npx tailwindcss init (node.js must install hona chye) is sy tailwind.config.js file bny gy only , input.css mn jo likhna h esy src file mn (@tailwind base;
+@tailwind components ;
+@tailwind utilities ;  ) tailwind extension install krni h vscode mn 
+
+then vscode ki setting kholni h or jo error tha hmra input.css and jo usmn error tha unknown wala @tailwind py jo a ra tha usko just css>link wala py ignore krna h 
+hmri jo tailwind.config.js file bni thi usmn jo content hota h usmn btana prta h k hm kdr likh rhy h esy content mn : "./foldername/*.html"]
+
+
+ye terminal mn run krni h cmd :  npx tailwindcss -i ./src/input.css -o ./dist/style.css
+ye hmy 1 style.css file bna k dy ga isko vscode mn link krna jsy css file ko krty h us sy css work krna start jo jaye gi 
+
+1 e bar agr hm ye terminal mn krdy gy to iska faida ye hoga k bar bar hmy ye cmd run ni krni pry gi --watch sy auto safe e smjh ly cmd ye h :     npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch 
+
+
+
+
+
+code eg:
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PwSkills a-development class</title>
+  </head>
+  <body class="bg-black">
+    <!-- navbar goes here  -->
+    <nav
+      class="w-full h-14 bg-indigo-300 text-white flex justify-between px-4 items-center md:px-4"
+    >
+      <div class="text-2xl text-indigo-700 font-bold">PW Skills</div>
+      <ul class="md:flex hidden font-semibold">
+        <li class="mx-[10px] cursor-pointer">Home</li>
+        <li class="mx-[10px] cursor-pointer">About</li>
+        <li class="mx-[10px] cursor-pointer">Contact Us</li>
+      </ul>
+      <div
+        class="hidden md:block px-2 py-2 bg-indigo-700 text-white rounded font-bold cursor-pointer"
+      >
+        Login/Signup
+      </div>
+      <div class="md:hidden">
+        <a class="text-4xl" href="#">&#8801;</a>
+      </div>
+    </nav>
+    <!-- navbar ends  -->
+    <!-- image section start -->
+    <header class="w-full h-auto">
+      <img
+        class="w-full hidden md:block"
+        src="https://cdn.pwskills.com/assets/uploads/banners/63a18cca807628f5968f528a/web.jpg"
+      />
+      <img
+        class="w-full md:hidden"
+        src="https://cdn.pwskills.com/assets/uploads/banners/63a18cca807628f5968f528a/mobile.jpg"
+        alt=""
+      />
+    </header>
+    <!-- image section ends here -->
+
+    <!-- our student section -->
+    <div
+      class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10"
+    >
+      <div
+        class="w-full h-auto flex flex-wrap flex-col items-center text-center"
+      >
+        <p class="text-indigo-800 font-bold text-3xl md:text-4xl text-center">
+          "pure Hardwork, No Shortcuts!"
+        </p>
+        <div
+          class="w-36 h-1 border-b-4 border-yellow-400 mt-2 rounded-2xl md:mt-4 mb-12"
+        ></div>
+      </div>
+      <div class="w-full flex flex-wrap justify-evenly">
+        <div class="w-46 flex flex-col items-center mb-12">
+          <img
+            class="w-44 h-44 rounded"
+            src="https://cdn1.vectorstock.com/i/1000x1000/80/60/reading-a-book-vector-1298060.jpg"
+            alt=""
+          />
+          <p class="text-3xl font-bold text-white">600+</p>
+          <p class="text-3xl font-bold text-gray-500">Diffrent Courses</p>
+        </div>
+        <div class="w-46 flex flex-col items-center mb-12">
+          <img
+            class="w-44 h-44 rounded"
+            src="https://cdn1.vectorstock.com/i/1000x1000/80/60/reading-a-book-vector-1298060.jpg"
+            alt=""
+          />
+          <p class="text-3xl font-bold text-white">600+</p>
+          <p class="text-3xl font-bold text-gray-500">Diffrent Courses</p>
+        </div>
+            <div class="w-46 flex flex-col items-center mb-12">
+              <img
+                class="w-44 h-44 rounded"
+                src="https://cdn1.vectorstock.com/i/1000x1000/80/60/reading-a-book-vector-1298060.jpg"
+                alt=""
+              />
+              <p class="text-3xl font-bold text-white">600+</p>
+              <p class="text-3xl font-bold text-gray-500">Diffrent Courses</p>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
